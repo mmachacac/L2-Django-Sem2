@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de la operación</title>
+</head>
+<body>
+    <h2>Resultado de la operación</h2>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% else %}
+    <p>La {{ operacion }} de {{ valor1 }} {{ simbolo }} {{ valor2 }} = {{ resultado }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Entorno virtual local
+.venv/
+venv/
+env/
+myvenv/
+
+# Caché y bytecode de Python
+__pycache__/
+*.py[cod]
+
+# Cachés de herramientas y cobertura
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Configuración local con posibles credenciales
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Base de datos SQLite local y archivos auxiliares
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

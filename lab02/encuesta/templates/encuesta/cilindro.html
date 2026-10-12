@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Volumen de un cilindro</title>
+</head>
+<body>
+    <h2>Volumen de un cilindro</h2>
+    <form action="{% url 'encuesta:resultado_cilindro' %}" method="post">
+        {% csrf_token %}
+        <p>
+            <label for="altura">Altura en metros:</label>
+            <input type="number" id="altura" name="altura" step="any" required>
+        </p>
+        <p>
+            <label for="diametro">Diámetro en metros:</label>
+            <input type="number" id="diametro" name="diametro" step="any" required>
+        </p>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>

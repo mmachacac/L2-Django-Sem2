@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del volumen del cilindro</title>
+</head>
+<body>
+    <h2>Resultado del volumen del cilindro</h2>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% else %}
+    <p>Altura: {{ altura }} m</p>
+    <p>Diámetro: {{ diametro }} m</p>
+    <p>Volumen: {{ volumen }} m³</p>
+    {% endif %}
+</body>
+</html>
